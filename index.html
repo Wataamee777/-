@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プレゼント</title>
+    <style>
+        img {
+            cursor: pointer;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>プレゼントをクリックするとはとが出ます</h1>
+    <img id="switchImage" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0evgMM9Ax4RyinjeIOCA_6vVsgFmQwyEfuEnm95a3uv6gWN5QSVb3SS9wqYOHB3sAeno92N_vdS_C160UL8ILjIxe4naoHSsey4dbxtAkLcyeGz7c-e3dDY91nB-9JXbSGyGehDgJuRQq/s800/present_box.png" alt="画像1">
+
+    <script>
+        // 画像のURLを設定
+        const images = ["https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0evgMM9Ax4RyinjeIOCA_6vVsgFmQwyEfuEnm95a3uv6gWN5QSVb3SS9wqYOHB3sAeno92N_vdS_C160UL8ILjIxe4naoHSsey4dbxtAkLcyeGz7c-e3dDY91nB-9JXbSGyGehDgJuRQq/s800/present_box.png", "https://ascii2d.net/thumbnail/d/7/5/2/d7529a0d38e8487d6d6c20d360b2d132.jpg"];
+        let currentIndex = 0;
+
+        // 画像をクリックしたときの動作
+        document.getElementById("switchImage").addEventListener("click", function() {
+            currentIndex = (currentIndex + 1) % images.length; // インデックスを切り替え
+            this.src = images[currentIndex]; // 新しい画像を表示
+        });
+    </script>
+</body>
+</html>
