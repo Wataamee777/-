@@ -1,0 +1,8 @@
+# はじめてのEasy Lang
+set name = "初心者"
+print "こんにちは、" + name + "さん！"
+
+set total = 0
+add total 3
+add total 7
+print "合計: " + total

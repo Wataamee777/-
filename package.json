@@ -1,0 +1,17 @@
+{
+  "name": "easy-lang",
+  "version": "0.1.0",
+  "description": "Beginner-friendly programming language runtime powered by Node.js",
+  "type": "module",
+  "bin": {
+    "easy-lang": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "run": "node src/index.js examples/hello.easy"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
